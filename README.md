@@ -4,13 +4,18 @@
 
 ## Links
 
+**Repository**
+
+[JR-Asif/EvencirMoodApp](https://github.com/JR-Asif/EvencirMoodApp)
+
 **APK**
 
-Primary (hosted): **[Download APK (Google Drive)](REPLACE_WITH_GOOGLE_DRIVE_APK_LINK)** — paste your Drive share URL (shape: `https://drive.google.com/file/d/<FILE_ID>/view?usp=sharing`). If that link stops working:
+**[Download APK (Google Drive)](https://drive.google.com/file/d/1_l1R1p9OBqk5wQjulaXpBMV280GHwW25/view?usp=sharing)** (`app-arm64-v8a-release.apk`)
 
-- **Build on your PC** — from this repo root, run `flutter pub get` then `flutter build apk --release --split-per-abi`. Install the output for most phones: `build/app/outputs/flutter-apk/app-arm64-v8a-release.apk` (that path is relative to your clone).
-- **Full paths:** after cloning, Android Studio / File Explorer: `<your-clone-folder>\build\app\outputs\flutter-apk\app-arm64-v8a-release.apk` on Windows; `<your-clone-folder>/build/app/outputs/flutter-apk/app-arm64-v8a-release.apk` on macOS or Linux.
-- **GitHub Releases** (optional): upload the built APK and link it. Example URL shape: `https://github.com/<username>/<repo>/releases/download/v1.0.0/app-arm64-v8a-release.apk`
+If Drive is unavailable:
+
+- **Build locally** — open a terminal inside the cloned project folder (`EvencirMoodApp`, or whatever folder name `git clone` created), run `flutter pub get` then `flutter build apk --release --split-per-abi`. Install **`build/app/outputs/flutter-apk/app-arm64-v8a-release.apk`** relative to that same folder (the `build/` directory stays untracked; see `.gitignore`).
+- **Local paths:** from the project root (folder with **`pubspec.yaml`**) use **`EvencirMoodApp`** as an example repo folder name—the release APK path is **`EvencirMoodApp\build\app\outputs\flutter-apk\app-arm64-v8a-release.apk`**
 
 **Video**
 
@@ -18,22 +23,22 @@ Primary (hosted): **[Download APK (Google Drive)](REPLACE_WITH_GOOGLE_DRIVE_APK_
 
 **Screenshots**
 
-Jump to **[Screenshots](#screenshots)** below, or open the folder on GitHub: [screenshots/](./screenshots/).
+Jump to **[Screenshots](#screenshots)** below, browse **[screenshots/](./screenshots/)** in your clone, or open them on GitHub under **[JR-Asif/EvencirMoodApp → screenshots](https://github.com/JR-Asif/EvencirMoodApp/tree/main/screenshots)**.
+
+---
+
+## Environment
+
+- **Dart SDK** — **`sdk: ^3.9.0`**   
 
 ---
 
 ## Dependencies
 
-**Runtime**
+**Plugins & dependencies**
 
-Only **Flutter** from the SDK runs the UI (Material widgets, gestures, themes). Fonts and PNGs live in **assets**, set in **pubspec.yaml**. No extra pub packages beyond that.
-
-**Dev only**
-
-**flutter_test** — runs widget tests under **test/**.
-
-**flutter_lints** — basic rules from **analysis_options.yaml**.
-
+At **runtime**, **no external Flutter plugins and no pub.dev packages are used.**  
+ 
 ---
 
 ## Folder layout (high level)
@@ -80,23 +85,19 @@ What's inside, in short commas:
 
 ## Screenshots
 
-Images live in **`screenshots/`**. On GitHub, paths like `./screenshots/ss_01.jpeg` open from **your repo on that branch**.
+Images live in **`screenshots/`**. Anywhere you view **`main`** (for example **[on GitHub](https://github.com/JR-Asif/EvencirMoodApp/tree/main/screenshots)**), paths like `./screenshots/ss_01.jpeg` resolve to those files on that revision.
 
-Tap a thumb to open the full file.
+Thumbnails below are scaled for the README—tap any image for the full-resolution file.
 
-[![Screenshot 01](./screenshots/ss_01.jpeg)](./screenshots/ss_01.jpeg)
+[<img src="./screenshots/ss_01.jpeg" alt="Screenshot 01" width="260">](./screenshots/ss_01.jpeg)
+[<img src="./screenshots/ss_02.jpeg" alt="Screenshot 02" width="260">](./screenshots/ss_02.jpeg)
+[<img src="./screenshots/ss_03.jpeg" alt="Screenshot 03" width="260">](./screenshots/ss_03.jpeg)
 
-[![Screenshot 02](./screenshots/ss_02.jpeg)](./screenshots/ss_02.jpeg)
+[<img src="./screenshots/ss_04.jpeg" alt="Screenshot 04" width="260">](./screenshots/ss_04.jpeg)
+[<img src="./screenshots/ss_05.jpeg" alt="Screenshot 05" width="260">](./screenshots/ss_05.jpeg)
+[<img src="./screenshots/ss_06.jpeg" alt="Screenshot 06" width="260">](./screenshots/ss_06.jpeg)
 
-[![Screenshot 03](./screenshots/ss_03.jpeg)](./screenshots/ss_03.jpeg)
-
-[![Screenshot 04](./screenshots/ss_04.jpeg)](./screenshots/ss_04.jpeg)
-
-[![Screenshot 05](./screenshots/ss_05.jpeg)](./screenshots/ss_05.jpeg)
-
-[![Screenshot 06](./screenshots/ss_06.jpeg)](./screenshots/ss_06.jpeg)
-
-[![Screenshot 07](./screenshots/ss_07.jpeg)](./screenshots/ss_07.jpeg)
+[<img src="./screenshots/ss_07.jpeg" alt="Screenshot 07" width="260">](./screenshots/ss_07.jpeg)
 
 [Browse screenshots folder](./screenshots/)
 
